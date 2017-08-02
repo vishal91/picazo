@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4EE9FD1600B1BC69268B38A5E2FCAE85'
+               BlueprintIdentifier = 'E9DD1F72C89B85DF58C228EFD9A0D169'
                BlueprintName = 'Pods-Picazo'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-Picazo.framework'>
