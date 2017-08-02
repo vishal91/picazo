@@ -13,6 +13,7 @@
 		7E5425C01F3063EF00384FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5425BF1F3063EF00384FDC /* Assets.xcassets */; };
 		7E5425C31F3063EF00384FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5425C11F3063EF00384FDC /* LaunchScreen.storyboard */; };
 		7E5425CE1F3063EF00384FDC /* PicazoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5425CD1F3063EF00384FDC /* PicazoTests.swift */; };
+		FAAC975D1A2E05F6F2008A1D /* Pods_Picazo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F80E8E7BE162062B6BB28F /* Pods_Picazo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		7E5425C91F3063EF00384FDC /* PicazoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicazoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5425CD1F3063EF00384FDC /* PicazoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicazoTests.swift; sourceTree = "<group>"; };
 		7E5425CF1F3063EF00384FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C5E6BC4BF7336E75FC4FFB /* Pods-Picazo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picazo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Picazo/Pods-Picazo.release.xcconfig"; sourceTree = "<group>"; };
+		B6A4E4ADDEB402566316664F /* Pods-Picazo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picazo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picazo/Pods-Picazo.debug.xcconfig"; sourceTree = "<group>"; };
+		E2F80E8E7BE162062B6BB28F /* Pods_Picazo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Picazo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAC975D1A2E05F6F2008A1D /* Pods_Picazo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F1646B8ADCC36855B8F09C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2F80E8E7BE162062B6BB28F /* Pods_Picazo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7E5425AC1F3063EF00384FDC = {
 			isa = PBXGroup;
 			children = (
 				7E5425B71F3063EF00384FDC /* Picazo */,
 				7E5425CC1F3063EF00384FDC /* PicazoTests */,
 				7E5425B61F3063EF00384FDC /* Products */,
+				A3A90E0CA27049AF522BB1C6 /* Pods */,
+				6F1646B8ADCC36855B8F09C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +111,15 @@
 			path = PicazoTests;
 			sourceTree = "<group>";
 		};
+		A3A90E0CA27049AF522BB1C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6A4E4ADDEB402566316664F /* Pods-Picazo.debug.xcconfig */,
+				A6C5E6BC4BF7336E75FC4FFB /* Pods-Picazo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E5425D21F3063EF00384FDC /* Build configuration list for PBXNativeTarget "Picazo" */;
 			buildPhases = (
+				A169EF712E1AA77F2E581C02 /* [CP] Check Pods Manifest.lock */,
 				7E5425B11F3063EF00384FDC /* Sources */,
 				7E5425B21F3063EF00384FDC /* Frameworks */,
 				7E5425B31F3063EF00384FDC /* Resources */,
+				9A19E6D4A9816BAF2DF5120A /* [CP] Embed Pods Frameworks */,
+				A87463F7E416082F4F5BD4BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +222,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A19E6D4A9816BAF2DF5120A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picazo/Pods-Picazo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A169EF712E1AA77F2E581C02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A87463F7E416082F4F5BD4BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picazo/Pods-Picazo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E5425B11F3063EF00384FDC /* Sources */ = {
@@ -341,6 +416,7 @@
 		};
 		7E5425D31F3063EF00384FDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A4E4ADDEB402566316664F /* Pods-Picazo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D68J6DF537;
@@ -354,6 +430,7 @@
 		};
 		7E5425D41F3063EF00384FDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C5E6BC4BF7336E75FC4FFB /* Pods-Picazo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D68J6DF537;
